@@ -8,8 +8,8 @@ import (
 	"strings"
 )
 
-func GetReport() (Report, error) {
-	resp, err := http.Get("http://adsb.gis.rit.edu/dump1090-fa/data/aircraft.json")
+func GetReport(url string) (Report, error) {
+	resp, err := http.Get(url)
 	if err != nil {
 		log.Fatal("Unable to get data ", err)
 	}

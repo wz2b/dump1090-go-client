@@ -25,4 +25,12 @@ type Aircraft struct {
 	 * This field might be a number, a string (usually "ground"), or nil
 	 */
 	BarometerAltitude json.Token `json:"alt_baro,omitempty"`
+
+	/*
+	 * These fields are NOT part of the dump1090 format, but they may
+	 * be added by external decorators
+	 */
+	Registration *string
+	Description  *string
+	AircraftType *string
 }

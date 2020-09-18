@@ -1,5 +1,3 @@
-module log1090
+module github.com/wz2b/dump1090-go-client
 
-go 1.13
-
-require github.com/influxdata/influxdb1-client v0.0.0-20191209144304-8bf82d3c094d
+go 1.14

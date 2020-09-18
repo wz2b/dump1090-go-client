@@ -1,4 +1,4 @@
-package log1090
+package dump1090
 
 import (
 	"encoding/json"

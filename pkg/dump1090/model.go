@@ -1,4 +1,4 @@
-package log1090
+package dump1090
 
 import "encoding/json"
 
@@ -9,7 +9,7 @@ type Report struct {
 }
 
 type Aircraft struct {
-	Hex               string  `json:"hex"`
+	Hex               string   `json:"hex"`
 	Squawk            *string  `json:"squawk,omitempty"`
 	Lat               *float64 `json:"lat,omitempty"`
 	Lon               *float64 `json:"lon,omitempty"`
@@ -19,12 +19,10 @@ type Aircraft struct {
 	Emergency         *string  `json:"emergency,omitempty"`
 	Category          *string  `json:"category,omitempty"`
 	Rssi              *float32 `json:"rssi,omitempty"`
-	GeometricAltitude *float64  `json:"alt_geom,omitempty"`
+	GeometricAltitude *float64 `json:"alt_geom,omitempty"`
 
 	/*
 	 * This field might be a number, a string (usually "ground"), or nil
 	 */
-	BarometerAltitude json.Token  `json:"alt_baro,omitempty"`
+	BarometerAltitude json.Token `json:"alt_baro,omitempty"`
 }
-
-

@@ -36,6 +36,10 @@ be used by other things including
 [telegraf](https://www.influxdata.com/time-series-platform/telegraf/),
 time permitting.  Contributions (in the form of pull requests) are welcome.
 
+## Aircraft Data
+
+
+Aircraft data comes from https://opensky-network.org/datasets/metadata/
 
 
 

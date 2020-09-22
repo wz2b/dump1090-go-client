@@ -1,0 +1,35 @@
+syntax = "proto2";
+option go_package = "pkg/dump1090";
+
+import "gogo.proto";
+
+
+message AircraftInfo {
+  required string icao24 = 1  [(gogoproto.moretags) = "csv:\"icao24\""];
+  optional string registration = 2 [(gogoproto.moretags) = "csv:\"registration\""];
+  optional string manufacturerIcao = 3 [(gogoproto.moretags) = "csv:\"manufacturericao\""];
+  optional string manufacturerName = 4 [(gogoproto.moretags) = "csv:\"manufacturername\""];
+  optional string model = 5 [(gogoproto.moretags) = "csv:\"model\""];
+  optional string typeCode = 6 [(gogoproto.moretags) = "csv:\"typecode\""];
+  optional string serialNumber = 7 [(gogoproto.moretags) = "csv:\"serialnumber\""];
+  optional string lineNumber = 8 [(gogoproto.moretags) = "csv:\"linenumber\""];
+  optional string icaoAircraftType = 9 [(gogoproto.moretags) = "csv:\"icaoaircrafttype\""];
+  optional string operator = 10 [(gogoproto.moretags) = "csv:\"operator\""];
+  optional string operatorCallsign = 11 [(gogoproto.moretags) = "csv:\"operatorcallsign\""];
+  optional string oepratorIcao = 12 [(gogoproto.moretags) = "csv:\"operatoricao\""];
+  optional string operatorIata = 13 [(gogoproto.moretags) = "csv:\"operatoriata\""];
+  optional string owner = 14 [(gogoproto.moretags) = "csv:\"owner\""];
+  optional string testReg = 15 [(gogoproto.moretags) = "csv:\"testreg\""];
+  optional string registered = 16 [(gogoproto.moretags) = "csv:\"registered\""];
+  optional string reguUtil = 17 [(gogoproto.moretags) = "csv:\"regutil\""];
+  optional string status = 18 [(gogoproto.moretags) = "csv:\"status\""];
+  optional string built = 19 [(gogoproto.moretags) = "csv:\"built\""];
+  optional string firstFlightDate = 20 [(gogoproto.moretags) = "csv:\"firstflightdate\""];
+  optional string seatConfiguration = 21 [(gogoproto.moretags) = "csv:\"seatconfiguration\""];
+  optional string engines = 22 [(gogoproto.moretags) = "csv:\"engines\""];
+  optional string modes = 23 [(gogoproto.moretags) = "csv:\"modes\""];
+  optional string adsb = 24 [(gogoproto.moretags) = "csv:\"adsb\""];
+  optional string acars = 25 [(gogoproto.moretags) = "csv:\"acars\""];
+  optional string notes = 26 [(gogoproto.moretags) = "csv:\"notes\""];
+  optional string categoryDescription = 27 [(gogoproto.moretags) = "csv:\"categorydescription\""];
+}
